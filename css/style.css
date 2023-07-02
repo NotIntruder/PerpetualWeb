@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Great+Vibes:400);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400);
 @import url(https://fonts.googleapis.com/css?family=karla);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One:400);
 
 <style>html,
 body,
@@ -627,6 +628,7 @@ body.is-instant:after {
 
 #image01 .frame:hover {
   filter: brightness(128.125%);
+  cursor: crosshair;
 }
 
 h1,
@@ -696,8 +698,8 @@ p spoiler-text {
 #text01 {
   text-align: center;
   color: #FFFFFF;
-  font-family: 'JetBrains Mono', monospace;
-  letter-spacing: -0.125rem;
+  font-family: 'Karla',  monospace;
+  letter-spacing: auto;
   width: 100%;
   font-size: 1em;
   line-height: 1.625;
@@ -797,6 +799,7 @@ p spoiler-text {
 #buttons01 .button:hover {
   border-color: #F83D41 !important;
   color: #F83D41 !important;
+  cursor: crosshair;
 }
 
 #buttons01 .button:hover svg {
@@ -1132,65 +1135,53 @@ p spoiler-text {
     gap: 0.75rem;
   }
 }
+
 #middle_container {
-    color: aliceblue;
-    font-family: 'Karla';
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 15ex;
+  color: aliceblue;
+  font-family: 'Karla';
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10ex;
 }
 
 #bottom_container {
-    color: aliceblue;
-    font-family:'Karla';
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 35ex;
-    
+  color: aliceblue;
+  font-family: 'Karla';
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
 ::-webkit-scrollbar {
   width: 0%;
-  border:none;
+  border: none;
 }
+
 footer {
   text-align: center;
   font-family: 'Raleway';
-  color:grey
+  color: grey
 }
+
 .link_footer {
   color: grey;
 }
-#nav_bar {
-  background-image: linear-gradient(#EB5B67, #EB815B);
-  position: fixed;
-  top:0;
-  width: 100%;
-  height: 6%;
-  z-index: 11;
-  border-bottom:2px solid #ffffff;
-}
 
-.h_nav {
-  position: fixed;
-  top: 1%;
-  font-size: 38px;
-  font-family: 'Great Vibes';
-  color:white;
-  z-index: 10;
-  height: 6%;
-  width: 30%;
-  margin: 0;
-}
 .about {
   font-family: 'Raleway';
   text-decoration: underline rgb(125, 125, 138);
   text-underline-offset: 8px;
   text-align: center;
+  resize: inherit;
+  position: relative;
+  bottom: 4em;
+
 }
 
 .p_about {
   font-size: larger;
   text-align: center;
+  position: relative;
+  bottom: 6em;
 }
 
 .projects {
@@ -1198,6 +1189,8 @@ footer {
   text-decoration: underline rgb(125, 125, 138);
   text-underline-offset: 8px;
   text-align: center;
+  position: relative;
+  top: 1em;
 }
 
 .perpetual {
@@ -1205,10 +1198,12 @@ footer {
   text-decoration: underline rgb(125, 125, 138);
   text-underline-offset: 8px;
   text-align-last: center;
+  position: relative;
+  top: 1.5em;
 }
 
 .perpetual_pfp {
-  scale: 70%;
+  scale: 50%;
   border-radius: 100%;
   border-color: #4FFEFB;
   border-style: solid;
@@ -1218,38 +1213,50 @@ footer {
   object-position: center;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  scale: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   position: relative;
-  margin-left: 15em;
-  margin-right: 15em;
-  
+  bottom: 4em;
 }
+
+.perpetual_pfp:hover {
+  filter: brightness(128.125%);
+  cursor: crosshair;
+}
+
 .p_perpetual {
   text-align: center;
   position: relative;
   color: aliceblue;
   font-family: 'Karla', sans-serif;
   font-size: 28px;
-  padding: 30px;
+  bottom: 9em;
 }
+
 .arcadelabs {
   font-family: monospace;
   text-decoration: underline rgb(125, 125, 138);
   text-underline-offset: 8px;
   text-align-last: center;
   margin-bottom: 0;
-  margin-top: 30px;
 }
 
 .arcadelabs_pfp {
   scale: 60%;
-  object-position: center;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   position: relative;
-  margin-right: 10em;
-  margin-left: 10em;
-  margin-bottom: 0;
+  bottom: 4em;
+
+}
+
+.arcadelabs_pfp:hover {
+  filter: brightness(128.125%);
+  cursor: crosshair;
 }
 
 .p_arcadelabs {
@@ -1259,7 +1266,187 @@ footer {
   font-family: 'Karla', sans-serif;
   font-size: 28px;
   margin-top: 0;
-  margin-bottom: 300px;
-  padding: 30px;
+  margin-bottom: 0;
+  bottom: 6em;
 }
+
+.icon_box {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+/* Nav */
+.h_nav {
+  position: relative;
+  left: 2em;
+  bottom: 2.5em;
+  font-family: 'Poiret One';
+  font-size: 40px;
+  color:white;
+  z-index: 10;
+  width: 30%;
+  text-align-last: left;
+  background-color: transparent;
+  margin: 0;
+}
+
+.btn_home {
+  color:rgb(255, 255, 255);
+  font-family: 'Raleway';
+  z-index: 11;
+  font-size: 22px;
+  background-color: transparent;
+  border-color: transparent;
+  position: relative;
+  left: 24em;
+  bottom: 6.8em;
+  
+}
+
+.btn_about {
+  color:rgb(255, 255, 255);
+  font-family: 'Raleway';
+  z-index: 11;
+  font-size: 22px;
+  position: relative;
+  left: 24em;
+  bottom: 6.8em;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+.btn_projects {
+  color:rgb(255, 255, 255);
+  font-family: 'Raleway';
+  z-index: 11;
+  font-size: 22px;
+  position: relative;
+  left: 24em;
+  bottom: 6.8em;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+.btn_home:hover {
+  transition-delay: 80ms;
+  transition:ease-in-out;
+  color:grey;
+  scale: 1.05;
+}
+
+.btn_about:hover {
+  transition-delay: 80ms;
+  transition:ease-in-out;
+  color:grey;
+  scale: 1.05;
+}
+
+.btn_projects:hover {
+  transition-delay: 80ms;
+  transition:ease-in-out;
+  color:grey;
+  scale: 1.05;
+}
+
+::-webkit-scrollbar {
+  width: 0%;
+  border:none;
+}
+
+.h_nav_about {
+  position: relative;
+  right: 12em;
+  bottom: 2.5em;
+  font-family: 'Poiret One';
+  font-size: 40px;
+  color:white;
+  z-index: 10;
+  text-align-last: left;
+  background-color: transparent;
+  margin: 0;
+}
+
+.h_nav_pr {
+  position: relative;
+  right: 12em;
+  bottom: 0em;
+  font-family: 'Poiret One';
+  font-size: 40px;
+  color:white;
+  z-index: 10;
+  text-align-last: left;
+  background-color: transparent;
+}
+
+.btn_home_pr {
+  color:rgb(255, 255, 255);
+  font-family: 'Raleway';
+  z-index: 11;
+  font-size: 22px;
+  background-color: transparent;
+  border-color: transparent;
+  position: relative;
+  left: 24em;
+  bottom: 4em;
+  
+}
+
+.btn_about_pr {
+  color:rgb(255, 255, 255);
+  font-family: 'Raleway';
+  z-index: 11;
+  font-size: 22px;
+  position: relative;
+  left: 24em;
+  bottom: 4em;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+.btn_projects_pr {
+  color:rgb(255, 255, 255);
+  font-family: 'Raleway';
+  z-index: 11;
+  font-size: 22px;
+  position: relative;
+  left: 24em;
+  bottom: 4em;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+.btn_home_pr:hover {
+  transition-delay: 80ms;
+  transition:ease-in-out;
+  color:grey;
+  scale: 1.05;
+}
+
+.btn_about_pr:hover {
+  transition-delay: 80ms;
+  transition:ease-in-out;
+  color:grey;
+  scale: 1.05;
+}
+
+.btn_projects_pr:hover {
+  transition-delay: 80ms;
+  transition:ease-in-out;
+  color:grey;
+  scale: 1.05;
+}
+#middle_container { animation: fadeIn 1.25s; }
+#bottom_container { animation: fadeIn 1.25s; }
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 </style>
